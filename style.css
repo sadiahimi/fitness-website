@@ -112,7 +112,72 @@ span{
     border: 1px solid white;
     margin-left: 10px;
 }
-@media (max-width: 909px){
+.habit-section{
+    width: 100%;
+}
+.habit-section .container{
+    width: 80%;
+    margin: auto;
+}
+.habit-section .container .row{
+    width: 60%;
+    margin: auto;
+}
+.habit-section .container .row .title{
+    text-align: center;
+    margin-top: 50px;
+} 
+.habit-section .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white
+} 
+.habit-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: gray;
+} 
+.habit-section .container .habit-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.habit-section .container .habit-card .card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.habit-section .container .habit-card .card .img-section img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid gray;
+}
+.habit-section .container .habit-card .card .content{
+    width: 100%;
+    text-align: center;
+}
+.habit-section .container .habit-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: white;
+} 
+.habit-section .container .habit-card .card .content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: gray;
+} 
+@media (max-width: 768px){
     nav #icon{
         display: block;
 }
@@ -133,8 +198,7 @@ nav li{
 nav a{
     font-size: 20px;
 }
-a.active,a:hover{
-    border: none;
-    color: azure;
+.habit-section .container .habit-card{
+    grid-template-columns: 1fr;
 }
 }
