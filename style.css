@@ -177,6 +177,49 @@ span{
     line-height: 1.5;
     color: gray;
 } 
+.wrapper{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contest{
+    width: 50%;
+    margin: 0px 25px;
+}
+.contest h2{
+font-size: 30px;
+color: white;
+}
+.contest p{
+    color: gray;
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 10px;
+}
+.images{
+    width: 50%;
+}
+.images img{
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+.contest .btn{
+    position: relative;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid tomato;
+    font-size: 19px;
+    color: white;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: tomato;
+    border-radius: 30px;
+}
 @media (max-width: 768px){
     nav #icon{
         display: block;
@@ -198,7 +241,41 @@ nav li{
 nav a{
     font-size: 20px;
 }
+.hero-img img{
+width: 100%;
+height: auto;
+}
+section{
+    padding: 0 3%;
+    transition: .2s;
+}
+.hero-text{
+    padding-top: 115px;
+}
+.hero-img{
+    text-align: center;
+}
+.hero{
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
 .habit-section .container .habit-card{
     grid-template-columns: 1fr;
+}
+.wrapper{
+    flex-direction: column;
+    margin-top: 0px;
+}
+.contest, .images{
+    width: 100%;
+    margin-top: 20px;
+}
+.contest h2{
+    font-size: 25px;
+}
+.contest .btn{
+    font-size: 16px;
+    padding: 12px 14px;
 }
 }
