@@ -4,7 +4,8 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: #111111;
+    background: rgb(15, 15, 15);
+    
     
 }
 body{
@@ -62,6 +63,7 @@ nav #icon{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2rem;
+    background: rgb(15, 15, 15);
 }
 section{
     padding: 0 19%;
@@ -204,7 +206,9 @@ color: white;
 .images img{
     width: 100%;
     height: auto;
-    border-radius: 100px;
+    border-radius: 30px;
+    object-fit: none;
+    object-position: 66% 28%;
 }
 .contest .btn{
     position: relative;
@@ -219,6 +223,96 @@ color: white;
     cursor: pointer;
     background-color: tomato;
     border-radius: 30px;
+}
+.header{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead tr th{
+ font-size: 14px;
+ font-weight: 600;
+ letter-spacing: 0.35px;
+ color: white;
+ opacity: 1;
+ padding: 12px;
+ vertical-align: top;
+ border: 1px solid gray;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: gray;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid gray;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+    background: rgb(37, 37, 37);
+}
+input{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    background: rgb(37, 37, 37);
+    border-radius: 10px;
+    font-size: 15px;
+}
+form #arrow{
+    position: absolute;
+    color: gray;
+    top: 20%;
+    left: 90%;
+    background: transparent;
+}
+.column{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.colums{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.column .input-group{
+    flex-wrap: wrap;
+}
+form p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: gray;
+}
+form .btn{
+    position: relative;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid tomato;
+    font-size: 19px;
+    color: white;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: tomato;
+}
+.bmii{
+    display: flex;
+    justify-content: space-between;
 }
 @media (max-width: 768px){
     nav #icon{
