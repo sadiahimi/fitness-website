@@ -3,10 +3,8 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: border-box;   
     background: rgb(15, 15, 15);
-    
-    
 }
 body{
     font-family: montserrat;
@@ -314,6 +312,79 @@ form .btn{
     display: flex;
     justify-content: space-between;
 }
+.other-container{
+    padding: 15px 9%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
+    gap: 15px;
+}
+.box{
+    box-shadow: 0 5px 10px rgba(43, 42, 42, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+}
+.box img{
+    height: 80%;
+    width: 100%;
+}
+.box h3{
+    color: white;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.box p{
+    color: #333;
+    font-size: 15px;
+    line-height: 1.8;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+}
+footer .foter{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+footer .foter .about h2{
+    position: relative;
+    color: tomato;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+footer .foter .about p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: gray;
+}
+.copyright{
+    width: 100%;
+    padding: 20px 100px 30px;
+    text-align: center;
+}
+.copyright p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: gray;
+}
+.links h2{
+    color: #fff;
+}
+.links li a{
+    color: gray;
+    font-size: 20px;
+}
 @media (max-width: 768px){
     nav #icon{
         display: block;
@@ -371,5 +442,12 @@ section{
 .contest .btn{
     font-size: 16px;
     padding: 12px 14px;
+}
+footer .foter{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+
 }
 }
